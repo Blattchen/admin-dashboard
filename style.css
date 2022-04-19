@@ -21,7 +21,6 @@ main {
 
 .trending {
     grid-column: 2/3;
-    margin-top: 3rem;
 }
 
 
@@ -35,19 +34,31 @@ main {
 }
 
 .title {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.2rem;
+
 }
 
 .annGrid {
     display: grid;
     margin: 1rem 0rem;
-    border: 2px solid black;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: calc(90vh / 3);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
 }
 
 .trendingGrid {
     display: grid;
-    border: 2px solid black;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: calc(90vh / 3);
+    border-radius: 0.5rem;
     margin-top: 1rem;
+    box-sizing: border-box;
 }
 
 .annGrid>div {
