@@ -6,13 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <title>Admin Dashboard</title>
 </head>
 
 <body>
-    <div class="sidebar">sidebar</div>
-    <header>header</header>
-    <main>main</main>
+    <div class="sidebar">
+        <div class="logo">
+            <span class="material-icons">
+                article
+            </span>
+            <span id="dashboard">Dashboard</span>
+        </div>
+        <ul class="profileMenu">
+
+            <li class="sidebar-elements"><span class="material-icons">home</span>Home</li>
+            <li class="sidebar-elements"><span class="material-icons">face</span>Profile</li>
+            <li class="sidebar-elements"><span class="material-icons">message</span>Messages</li>
+            <li class="sidebar-elements"><span class="material-icons">history</span>History</li>
+            <li class="sidebar-elements"><span class="material-icons">task</span>Tasks</li>
+            <li class="sidebar-elements"><span class="material-icons">forum</span>Communities</li>
+            <li class="sidebar-tools"><span class="material-icons">settings</span>Settings</li>
+            <li class="sidebar-tools"><span class="material-icons">contact_support</span>Support</li>
+            <li class="sidebar-tools"><span class="material-icons">verified_user</span>Privacy</li>
+        </ul>
+    </div>
+    <header>
+        <div class="search">
+            <div class="iconSearch"><span class="material-icons">search</span>
+                <input type="text" name="searchinput" id="search" placeholder="type something">
+            </div>
+        </div>
+        <div class="userSmall">
+            <div class="profileIconSmall"><span class="material-icons-outlined">notifications_active</span>profile pic
+            </div>
+            <div class="profileName">profile name</div>
+        </div>
+        <div class="userBig">
+            <div class="profileIconBig">profile icon big</div>
+            <div class="profileIconBig">profile icon big</div>
+            <div class="profileNameTag">profile name and tag</div>
+        </div>
+        <div class="header-options">
+            <button class="options">New</button>
+            <button class="options">Upload</button>
+            <button class="options">Share</button>
+        </div>
+    </header>
+    <main>
+        <div class="projects">
+            <span>Projects</span>
+            <div class="projectgrid">
+                <div class="project1">Project 1</div>
+                <div class="project2">Project 2</div>
+                <div class="project3">Project 3</div>
+                <div class="project4">Project 4</div>
+                <div class="project5">Project 5</div>
+                <div class="project6">Project 6</div>
+            </div>
+        </div>
+        <div class="announcements">
+            <span>Announcements</span>
+            <div class="ann1">
+                <p>1</p>
+                <span>some text</span>
+            </div>
+            <div class="ann2">
+                <p>2</p>
+                <span>some text</span>
+            </div>
+            <div class="ann3">
+                <p>3</p>
+                <span>some text</span>
+            </div>
+        </div>
+        <div class="trending">
+            <span>Trending</span>
+            <div class="trend">
+                <div class="icon"></div>
+                <p>username</p>
+                <span>text</span>
+            </div>
+            <div class="trend">
+                <div class="icon"></div>
+                <p>username</p>
+                <span>text</span>
+            </div>
+            <div class="trend">
+                <div class="icon"></div>
+                <p>username</p>
+                <span>text</span>
+            </div>
+            <div class="trend">
+                <div class="icon"></div>
+                <p>username</p>
+                <span>text</span>
+            </div>
+        </div>
+    </main>
 
 </body>
 
