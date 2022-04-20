@@ -42,13 +42,14 @@ main {
 .annGrid {
     display: grid;
     margin: 1rem 0rem;
-    gap: 1rem;
-    padding: 1rem;
+    gap: .5rem;
+    padding: .6rem;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     height: calc(90vh / 3);
     border-radius: 0.5rem;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 .trendingGrid {
@@ -59,21 +60,93 @@ main {
     border-radius: 0.5rem;
     margin-top: 1rem;
     box-sizing: border-box;
+    padding: .5rem;
+    align-items: center;
+    overflow: auto;
 }
 
-.annGrid>div {
-    display: grid;
-    justify-items: center;
+.annGrid>div>p {
+    font-size: 0.9rem;
+    font-weight: bold;
 }
+
+.annGrid>div>p+span {
+    font-size: 0.8rem;
+    font-weight: 300;
+    position: relative;
+}
+
+.icon>span:first-child {
+    font-size: 36px;
+
+}
+
+.trend>div>p {
+    font-weight: bold;
+}
+
+.trend>div>p+span {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.trend {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+}
+
+/* 
+.annGrid>div>p+span:after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(./img/read.svg);
+} */
 
 .projectgrid>div {
-    height: calc(100vh / 3);
+    height: calc(80vh / 3);
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 18px 0px 0px -10px rgba(111, 111, 255, 1) inset, rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     -webkit-box-shadow: 18px 0px 0px -10px rgba(111, 111, 255, 1) inset, rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     -moz-box-shadow: 18px 0px 0px -10px rgba(111, 111, 255, 1) inset, rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 1rem;
 
+}
+
+.projectgrid div {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.projectgrid>div>span {
+    display: block;
+    padding-top: .5rem;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.projectgrid>div>span:after {
+    position: absolute;
+    content: "";
+    background: url("./img/star.svg");
+    width: 24px;
+    height: 24px;
+    bottom: 1rem;
+    right: 4rem;
+}
+
+.projectgrid>div>span::before {
+    position: absolute;
+    content: "";
+    background: url("./img/eye.svg");
+    width: 24px;
+    height: 24px;
+    bottom: 1rem;
+    right: 1.5rem;
 }
 
 header {
